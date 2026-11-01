@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.title">HaulRight – Truck &amp; Vehicle Rental, On Time, Every Time</title>
+<meta name="description" data-i18n-meta="meta.desc" content="Rent pickups, mini trucks, covered vans, 14–22 ft trucks and trailers with verified drivers. Transparent pricing, fast booking, nationwide coverage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span>📞 <span data-i18n="top.call">Call 24/7:</span> <a href="tel:+10000000000">+1 000 000 0000</a></span>
+    <span class="hide-sm">✉️ <a href="mailto:hello@haulright.example">hello@haulright.example</a></span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header" id="top">
+  <div class="wrap header__in">
+    <a class="logo" href="#top" aria-label="HaulRight">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#FFB400"/><path d="M6 21h14V10H6zM20 14h6l3 4v3H20z" fill="#0B1B33"/><circle cx="11" cy="23" r="3" fill="#0B1B33" stroke="#FFB400" stroke-width="1.5"/><circle cx="24" cy="23" r="3" fill="#0B1B33" stroke="#FFB400" stroke-width="1.5"/></svg>
+      <span>Haul<b>Right</b></span>
+    </a>
+    <nav id="nav" class="nav">
+      <a href="#fleet" data-i18n="nav.fleet">Our Fleet</a>
+      <a href="#how" data-i18n="nav.how">How it works</a>
+      <a href="#why" data-i18n="nav.why">Why us</a>
+      <a href="#clients" data-i18n="nav.clients">Clients</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a class="btn btn--sm" href="#contact" data-i18n="nav.quote">Get a Quote</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" data-i18n-aria="lang.aria" aria-label="Switch language">বাংলা</button>
+    <button class="burger" data-i18n-aria="menu.aria" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/photos/29057946/pexels-photo-29057946.jpeg?auto=compress&cs=tinysrgb&w=1600" aria-hidden="true">
+    <source src="https://videos.pexels.com/video-files/17899033/17899033-hd_1920_1080_24fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero__shade"></div>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <span class="pill" data-i18n="h.pill">Trusted by 5,000+ businesses</span>
+      <h1><span data-i18n="h.h1a">Rent the right truck.</span><br><em data-i18n="h.h1b">Move anything, anywhere.</em></h1>
+      <p data-i18n="h.p">From a small pickup to a 22-ft container truck — book verified vehicles and drivers in minutes, with clear pricing and no hidden charges.</p>
+      <div class="hero__cta">
+        <a class="btn" href="#contact" data-i18n="h.cta1">Get a Free Quote</a>
+        <a class="btn btn--ghost" href="#fleet" data-i18n="h.cta2">Browse Vehicles</a>
+      </div>
+      <ul class="hero__ticks">
+        <li data-i18n="h.t1">Verified drivers</li><li data-i18n="h.t2">GPS-tracked trips</li><li data-i18n="h.t3">24/7 support</li>
+      </ul>
+    </div>
+
+    <form class="quick" id="quickForm" data-i18n-aria="q.aria" aria-label="Quick quote">
+      <h2 data-i18n="q.title">Quick quote</h2>
+      <label><span data-i18n="q.from">Pickup city</span><input name="from" data-i18n-ph="q.from.ph" placeholder="e.g. Dhaka" required></label>
+      <label><span data-i18n="q.to">Drop city</span><input name="to" data-i18n-ph="q.to.ph" placeholder="e.g. Chittagong" required></label>
+      <label><span data-i18n="q.veh">Vehicle</span>
+        <select name="vehicle"><option value="Pickup" data-i18n="v.pickup">Pickup (1 ton)</option><option value="Mini Truck" data-i18n="v.mini">Mini Truck (2 ton)</option><option value="Covered Van" data-i18n="v.van">Covered Van (3 ton)</option><option value="14 ft Truck" data-i18n="v.t14">14 ft Truck (5 ton)</option><option value="20 ft Truck" data-i18n="v.t20">20 ft Truck (9 ton)</option><option value="Trailer / Container" data-i18n="v.trailer">Trailer / Container</option></select>
+      </label>
+      <button class="btn btn--block" type="submit" data-i18n="q.btn">Continue →</button>
+      <small data-i18n="q.note">Next step: share your phone number and we call back within 15 min.</small>
+    </form>
+  </div>
+  <svg class="road" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20h1200" stroke="#FFB400" stroke-width="4" stroke-dasharray="40 30"/></svg>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="wrap stats__in">
+    <div><strong data-i18n="s.1n">12,000+</strong><span data-i18n="s.1l">Trips completed</span></div>
+    <div><strong data-i18n="s.2n">850+</strong><span data-i18n="s.2l">Vehicles on network</span></div>
+    <div><strong data-i18n="s.3n">64</strong><span data-i18n="s.3l">Districts covered</span></div>
+    <div><strong data-i18n="s.4n">4.8★</strong><span data-i18n="s.4l">Average rating</span></div>
+  </div>
+</section>
+
+<!-- Corporate clients slider -->
+<section class="clients" id="clients">
+  <div class="wrap">
+    <header class="section__head section__head--sm">
+      <span class="eyebrow" data-i18n="cl.eye">Our clients</span>
+      <h2 data-i18n="cl.h2">Trusted by growing companies</h2>
+      <p data-i18n="cl.p">Businesses across industries rely on HaulRight for their everyday freight.</p>
+    </header>
+  </div>
+  <div class="logos" id="logos">
+    <ul class="logos__track" id="logosTrack">
+        <li class="logo-item w1"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="12" cy="12" r="3.5" fill="currentColor"/></svg><span>Brightline Foods</span></li>
+        <li class="logo-item w2"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 3 22 21H2z" fill="currentColor"/></svg><span>ZENITH STEEL</span></li>
+        <li class="logo-item w3"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="19" cy="6" r="3" fill="currentColor"/></svg><span>Orbit Retail</span></li>
+        <li class="logo-item w2"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12z" fill="currentColor"/></svg><span>NEXORA</span></li>
+        <li class="logo-item w1"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M9 2h6v7h7v6h-7v7H9v-7H2V9h7z" fill="currentColor"/></svg><span>Alta Pharma</span></li>
+        <li class="logo-item w3"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 2l9 5v10l-9 5-9-5V7z" fill="currentColor"/></svg><span>Cobalt Electronics</span></li>
+        <li class="logo-item w1"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M4 20C4 9 10 4 21 3c0 11-5 17-16 17z" fill="currentColor"/></svg><span>Greenfield Agro</span></li>
+        <li class="logo-item w2"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M3 21V11h4v10zm7 0V5h4v16zm7 0V9h4v12z" fill="currentColor"/></svg><span>SKYLINE</span></li>
+        <li class="logo-item w3"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="3"/></svg><span>Pioneer Cement</span></li>
+        <li class="logo-item w1"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="currentColor"/></svg><span>Swift Mart</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Fleet -->
+<section class="section" id="fleet">
+  <div class="wrap">
+    <header class="section__head">
+      <span class="eyebrow" data-i18n="f.eye">Our fleet</span>
+      <h2 data-i18n="f.h2">A vehicle for every load</h2>
+      <p data-i18n="f.p">Pick the size that fits your cargo. Not sure? Tell us what you're moving and we'll recommend one.</p>
+    </header>
+
+    <div class="grid cards">
+      <article class="card">
+        <img src="https://images.pexels.com/photos/16521273/pexels-photo-16521273.jpeg?auto=compress&cs=tinysrgb&w=800" data-i18n-alt="f1.a" alt="White pickup truck parked in an open field" loading="lazy" width="800" height="520">
+        <h3 data-i18n="f1.n">Pickup</h3>
+        <p class="meta" data-i18n="f1.m">Up to 1 ton · 7 ft bed</p>
+        <p data-i18n="f1.d">Small deliveries, shop restocking, furniture, appliances.</p>
+        <a href="#contact" class="link" data-i18n="f.link">Request this vehicle →</a>
+      </article>
+      <article class="card">
+        <img src="https://images.pexels.com/photos/33897865/pexels-photo-33897865.jpeg?auto=compress&cs=tinysrgb&w=800" data-i18n-alt="f2.a" alt="Delivery truck driving along a coastal road" loading="lazy" width="800" height="520">
+        <h3 data-i18n="f2.n">Mini Truck</h3>
+        <p class="meta" data-i18n="f2.m">Up to 2 ton · 9 ft body</p>
+        <p data-i18n="f2.d">Intra-city moves, e-commerce hubs, small business goods.</p>
+        <a href="#contact" class="link" data-i18n="f.link">Request this vehicle →</a>
+      </article>
+      <article class="card">
+        <img src="https://images.pexels.com/photos/12821568/pexels-photo-12821568.jpeg?auto=compress&cs=tinysrgb&w=800" data-i18n-alt="f3.a" alt="White van parked on a tree-lined street" loading="lazy" width="800" height="520">
+        <h3 data-i18n="f3.n">Covered Van</h3>
+        <p class="meta" data-i18n="f3.m">Up to 3 ton · 12 ft closed</p>
+        <p data-i18n="f3.d">Weather-safe transport for electronics, food and retail stock.</p>
+        <a href="#contact" class="link" data-i18n="f.link">Request this vehicle →</a>
+      </article>
+      <article class="card">
+        <img src="https://images.pexels.com/photos/17358983/pexels-photo-17358983.jpeg?auto=compress&cs=tinysrgb&w=800" data-i18n-alt="f4.a" alt="Truck loaded with sacks of cargo" loading="lazy" width="800" height="520">
+        <h3 data-i18n="f4.n">14 ft Truck</h3>
+        <p class="meta" data-i18n="f4.m">Up to 5 ton · open / covered</p>
+        <p data-i18n="f4.d">Inter-city freight, building material, household shifting.</p>
+        <a href="#contact" class="link" data-i18n="f.link">Request this vehicle →</a>
+      </article>
+      <article class="card">
+        <img src="https://images.pexels.com/photos/14005602/pexels-photo-14005602.jpeg?auto=compress&cs=tinysrgb&w=800" data-i18n-alt="f5.a" alt="Truck travelling along a highway" loading="lazy" width="800" height="520">
+        <h3 data-i18n="f5.n">20 ft Truck</h3>
+        <p class="meta" data-i18n="f5.m">Up to 9 ton · closed body</p>
+        <p data-i18n="f5.d">Factory dispatch, wholesale loads and long-haul cargo.</p>
+        <a href="#contact" class="link" data-i18n="f.link">Request this vehicle →</a>
+      </article>
+      <article class="card">
+        <img src="https://images.pexels.com/photos/9754798/pexels-photo-9754798.jpeg?auto=compress&cs=tinysrgb&w=800" data-i18n-alt="f6.a" alt="Truck carrying a blue shipping container" loading="lazy" width="800" height="520">
+        <h3 data-i18n="f6.n">Trailer / Container</h3>
+        <p class="meta" data-i18n="f6.m">20–40 ft · 15–30 ton</p>
+        <p data-i18n="f6.d">Heavy machinery, port-to-factory and bulk shipments.</p>
+        <a href="#contact" class="link" data-i18n="f.link">Request this vehicle →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section section--dark" id="how">
+  <div class="wrap">
+    <header class="section__head">
+      <span class="eyebrow" data-i18n="how.eye">How it works</span>
+      <h2 data-i18n="how.h2">Booked in three simple steps</h2>
+    </header>
+    <ol class="steps">
+      <li><span>1</span><h3 data-i18n="how.1h">Tell us your trip</h3><p data-i18n="how.1p">Share pickup, drop-off, cargo and date through the form or a phone call.</p></li>
+      <li><span>2</span><h3 data-i18n="how.2h">Get a fixed quote</h3><p data-i18n="how.2p">We match you with a verified vehicle and send a clear, all-inclusive price.</p></li>
+      <li><span>3</span><h3 data-i18n="how.3h">Load &amp; go</h3><p data-i18n="how.3p">Driver arrives on time. Track the trip and receive confirmation on delivery.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="section section--blur" id="why" style="--bg-img:url('https://images.pexels.com/photos/27099093/pexels-photo-27099093.jpeg?auto=compress&cs=tinysrgb&w=1400')">
+  <div class="wrap">
+    <header class="section__head">
+      <span class="eyebrow" data-i18n="why.eye">Why HaulRight</span>
+      <h2 data-i18n="why.h2">Built for reliable logistics</h2>
+    </header>
+    <div class="grid feats">
+      <div class="feat"><i>✔</i><h3 data-i18n="why.1h">Verified drivers &amp; vehicles</h3><p data-i18n="why.1p">Every driver and truck is document-checked before joining.</p></div>
+      <div class="feat"><i>৳</i><h3 data-i18n="why.2h">Transparent pricing</h3><p data-i18n="why.2p">One fixed quote. No surprise tolls, waiting or loading fees.</p></div>
+      <div class="feat"><i>⚡</i><h3 data-i18n="why.3h">Fast confirmation</h3><p data-i18n="why.3p">Most bookings are confirmed within 15 minutes.</p></div>
+      <div class="feat"><i>📍</i><h3 data-i18n="why.4h">Live tracking</h3><p data-i18n="why.4p">GPS-tracked trips so you always know where your cargo is.</p></div>
+      <div class="feat"><i>🛡</i><h3 data-i18n="why.5h">Cargo safety</h3><p data-i18n="why.5p">Optional insurance and trained handlers for fragile goods.</p></div>
+      <div class="feat"><i>☎</i><h3 data-i18n="why.6h">24/7 support</h3><p data-i18n="why.6p">A real person on call any hour, any day of the week.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Coverage / CTA band -->
+<section class="band band--photo" id="coverage" style="--bg-img:url('https://images.pexels.com/photos/29057946/pexels-photo-29057946.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+  <div class="wrap band__in">
+    <div>
+      <span class="eyebrow eyebrow--dark" data-i18n="cov.eye">Coverage</span>
+      <h2 data-i18n="cov.h2">Nationwide network, local response</h2>
+      <p data-i18n="cov.p">Major hubs and every district in between. Need a one-off trip or a monthly contract for your business? We do both.</p>
+      <ul class="tags"><li data-i18n="cov.c1">Dhaka</li><li data-i18n="cov.c2">Chittagong</li><li data-i18n="cov.c3">Sylhet</li><li data-i18n="cov.c4">Khulna</li><li data-i18n="cov.c5">Rajshahi</li><li data-i18n="cov.c6">Barishal</li><li data-i18n="cov.c7">Rangpur</li><li data-i18n="cov.c8">Mymensingh</li><li data-i18n="cov.c9">+ 56 more</li></ul>
+    </div>
+    <a class="btn btn--dark" href="#contact" data-i18n="cov.btn">Plan my trip</a>
+  </div>
+</section>
+
+<!-- Client recommendations (carousel) -->
+<section class="section section--tint" id="recommendations">
+  <div class="wrap wrap--narrow">
+    <header class="section__head">
+      <span class="eyebrow" data-i18n="r.eye">Client recommendations</span>
+      <h2 data-i18n="r.h2">Recommended by the businesses that ship with us</h2>
+    </header>
+    <div class="reco" id="reco" aria-roledescription="carousel">
+      <div class="reco__viewport">
+        <div class="reco__track" id="recoTrack">
+        <figure class="reco__slide">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="reco__quote" data-i18n="r1.q">HaulRight handles our weekly dispatch to six districts without a single missed slot. Their fixed pricing makes budgeting simple.</p>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">FR</span>
+            <span class="who"><b data-i18n="r1.n">Farhana Rahman</b><small data-i18n="r1.r">Logistics Manager, Brightline Foods</small></span>
+            <span class="badge" data-i18n="r.badge">Verified client</span>
+          </figcaption>
+        </figure>
+        <figure class="reco__slide">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="reco__quote" data-i18n="r2.q">We moved heavy machinery from the port to our factory safely and on schedule. We recommend them for any industrial shipment.</p>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">TH</span>
+            <span class="who"><b data-i18n="r2.n">Tanvir Hossain</b><small data-i18n="r2.r">Head of Operations, Zenith Steel</small></span>
+            <span class="badge" data-i18n="r.badge">Verified client</span>
+          </figcaption>
+        </figure>
+        <figure class="reco__slide">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="reco__quote" data-i18n="r3.q">Live tracking and a responsive support team changed how we manage deliveries. Our customers now get accurate arrival times.</p>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">SI</span>
+            <span class="who"><b data-i18n="r3.n">Sadia Islam</b><small data-i18n="r3.r">Supply Chain Lead, Orbit Retail</small></span>
+            <span class="badge" data-i18n="r.badge">Verified client</span>
+          </figcaption>
+        </figure>
+        <figure class="reco__slide">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <p class="reco__quote" data-i18n="r4.q">Drivers are professional and vehicles are always clean and well maintained. HaulRight is now our default transport partner.</p>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">MK</span>
+            <span class="who"><b data-i18n="r4.n">Mahmudul Karim</b><small data-i18n="r4.r">Procurement Director, Skyline Builders</small></span>
+            <span class="badge" data-i18n="r.badge">Verified client</span>
+          </figcaption>
+        </figure>
+        </div>
+      </div>
+      <div class="reco__nav">
+        <button type="button" class="reco__btn" id="recoPrev" data-i18n-aria="r.prev" aria-label="Previous recommendation">‹</button>
+        <div class="reco__dots" id="recoDots"></div>
+        <button type="button" class="reco__btn" id="recoNext" data-i18n-aria="r.next" aria-label="Next recommendation">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer reviews -->
+<section class="section">
+  <div class="wrap">
+    <header class="section__head">
+      <span class="eyebrow" data-i18n="t.eye">Customers</span>
+      <h2 data-i18n="t.h2">What our clients say</h2>
+    </header>
+    <div class="grid quotes">
+      <blockquote><p data-i18n="t.1q">“We moved our whole warehouse in two days. Trucks arrived exactly on schedule.”</p><footer data-i18n="t.1a">— Rahim A., Retail owner</footer></blockquote>
+      <blockquote><p data-i18n="t.2q">“Fixed price, no drama. We now use HaulRight for all our weekly dispatches.”</p><footer data-i18n="t.2a">— Nusrat J., E-commerce</footer></blockquote>
+      <blockquote><p data-i18n="t.3q">“Driver was professional and the live tracking gave my client real peace of mind.”</p><footer data-i18n="t.3a">— Imran H., Contractor</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--tint" id="faq">
+  <div class="wrap wrap--narrow">
+    <header class="section__head">
+      <span class="eyebrow" data-i18n="faq.eye">FAQ</span>
+      <h2 data-i18n="faq.h2">Common questions</h2>
+    </header>
+    <details><summary data-i18n="faq.1q">Do the vehicles come with a driver?</summary><p data-i18n="faq.1a">Yes. Every booking includes a verified, experienced driver unless you've arranged a self-drive contract with us.</p></details>
+    <details><summary data-i18n="faq.2q">How is the price calculated?</summary><p data-i18n="faq.2a">Based on distance, vehicle type and load. You receive one fixed quote before confirming.</p></details>
+    <details><summary data-i18n="faq.3q">Can I book for multiple days or a monthly contract?</summary><p data-i18n="faq.3a">Absolutely. Mention it in the contact form and we'll prepare a custom plan.</p></details>
+    <details><summary data-i18n="faq.4q">Is my cargo insured?</summary><p data-i18n="faq.4a">Basic transit cover is available on request, and higher-value goods can be insured separately.</p></details>
+    <details><summary data-i18n="faq.5q">How quickly can a vehicle arrive?</summary><p data-i18n="faq.5a">In major cities, often within a few hours. For remote routes we recommend booking a day ahead.</p></details>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="wrap contact">
+    <div class="contact__info">
+      <span class="eyebrow" data-i18n="c.eye">Contact</span>
+      <h2 data-i18n="c.h2">Tell us what you need to move</h2>
+      <p data-i18n="c.p">Fill in the form and our team will call you back within 15 minutes during business hours.</p>
+      <ul class="info">
+        <li><b data-i18n="c.phone">Phone</b><a href="tel:+10000000000">+1 000 000 0000</a></li>
+        <li><b data-i18n="c.email">Email</b><a href="mailto:hello@haulright.example">hello@haulright.example</a></li>
+        <li><b data-i18n="c.office">Office</b><span data-i18n="c.addr">123 Logistics Avenue, Your City</span></li>
+        <li><b data-i18n="c.hours">Hours</b><span data-i18n="c.open">Open 24 / 7</span></li>
+      </ul>
+    </div>
+
+    <form class="form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <!-- honeypot spam trap -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+      <input type="hidden" name="_subject" value="New enquiry from HaulRight website">
+      <input type="hidden" name="site_language" id="siteLang" value="en">
+
+      <div class="row">
+        <label><span data-i18n="c.name">Full name *</span><input name="name" required autocomplete="name"></label>
+        <label><span data-i18n="c.phoneL">Phone *</span><input name="phone" type="tel" required autocomplete="tel"></label>
+      </div>
+      <label><span data-i18n="c.emailL">Email</span><input name="email" type="email" autocomplete="email"></label>
+      <div class="row">
+        <label><span data-i18n="c.from">Pickup location</span><input name="from"></label>
+        <label><span data-i18n="c.to">Drop location</span><input name="to"></label>
+      </div>
+      <div class="row">
+        <label><span data-i18n="c.veh">Vehicle type</span>
+          <select name="vehicle">
+            <option value="" data-i18n="c.notsure">Not sure</option><option value="Pickup" data-i18n="vs.pickup">Pickup</option><option value="Mini Truck" data-i18n="vs.mini">Mini Truck</option><option value="Covered Van" data-i18n="vs.van">Covered Van</option><option value="14 ft Truck" data-i18n="vs.t14">14 ft Truck</option><option value="20 ft Truck" data-i18n="vs.t20">20 ft Truck</option><option value="Trailer / Container" data-i18n="vs.trailer">Trailer / Container</option>
+          </select>
+        </label>
+        <label><span data-i18n="c.date">Date needed</span><input name="date" type="date"></label>
+      </div>
+      <label><span data-i18n="c.msg">Message</span><textarea name="message" rows="4" data-i18n-ph="c.msg.ph" placeholder="Type of goods, approx. weight, any special needs…"></textarea></label>
+      <button class="btn btn--block" type="submit" data-i18n="c.send">Send Request</button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div>
+      <a class="logo logo--light" href="#top"><span>Haul<b>Right</b></span></a>
+      <p data-i18n="ft.desc">Reliable truck and vehicle rental for businesses and individuals.</p>
+    </div>
+    <div>
+      <h4 data-i18n="ft.explore">Explore</h4>
+      <a href="#fleet" data-i18n="nav.fleet">Our Fleet</a><a href="#how" data-i18n="nav.how">How it works</a><a href="#faq" data-i18n="nav.faq">FAQ</a><a href="#contact" data-i18n="ft.contact">Contact</a>
+    </div>
+    <div>
+      <h4 data-i18n="ft.reach">Reach us</h4>
+      <a href="tel:+10000000000">+1 000 000 0000</a>
+      <a href="mailto:hello@haulright.example">hello@haulright.example</a>
+    </div>
+  </div>
+  <div class="wrap footer__copy"><span data-i18n="ft.credit">Photos &amp; video:</span> <a href="https://www.pexels.com" target="_blank" rel="noopener">Pexels</a> — Shantum Singh, kall, throughnislens, Mathias Reding, José luis Rivera correa, Markie Mad, Tom Jackson, theshuttervision, EJ Merl. © <span id="yr">2026</span> HaulRight. <span data-i18n="ft.rights">All rights reserved.</span></div>
+</footer>
+
+<a class="wa" href="https://wa.me/10000000000" data-i18n-aria="wa.aria" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">💬 <span data-i18n="wa.name">WhatsApp</span></a>
+
+<script src="strings.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
